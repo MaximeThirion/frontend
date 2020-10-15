@@ -2,6 +2,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <style>
+            table {
+                border: 1px solid black;
+            }
+            th, tr, td {
+                border: 1px solid black;
+            }
+        </style>
     </head>
     <body>
         <!-- Un commentaire en html -->
@@ -23,10 +31,14 @@
             <li>Un élément de liste ordonnée</li>
         </ol>
         <!-- Pour passer à la ligne on utilise la balise <br> -->
-        <img src="#" alt="texte qui remplace l'image du cours">
+        <img src="#" alt="texte qui remplace l'image du cours"><br><br>
 
         <table>
-            <th></th>
+            <thead>
+                <tr>
+                    <th colspan="2">Entête du tableau</th>
+                </tr>
+            </thead>
             <tr>
                 <td>
                     une case du tableau
