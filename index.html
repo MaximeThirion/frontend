@@ -20,22 +20,21 @@
                             <a class="nav-link" href="#" onclick="afficherContenu('html/cours-html.html');">HTML de base</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#" onclick="afficherContenu('./bootstrap/index.html');">Bootstrap</a>
+                            <a class="nav-link" href="#" onclick="afficherContenu('bootstrap/index.html');">Bootstrap</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <main class="container-fluid" id="stockage">
+        <main class="container-fluid p-0" id="stockage">
             <!-- Contenu -->
         </main>
         <footer>
-
         </footer>
         <script type="text/javascript">
             function afficherContenu(page){
-
-                document.getElementById('stockage').innerHTML = "<object class=\"container-fluid\" style=\"height : 100vh\" data=" + page + "></object>" ;
+                var stockage = document.getElementById('stockage');
+                stockage.innerHTML = "<object class=\"container-fluid p-0\" data=" + page + "></object>";
             }
         </script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
