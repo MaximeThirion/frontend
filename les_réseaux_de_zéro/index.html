@@ -86,14 +86,14 @@
                 <article class="mb-5 mt-5">
                     <h2>Matériel</h2>
                 </article>
-                <article class="mb-5">
-                    <h4>Les moyens utilisés (médias d'accès) :</h4>
+                <article class="mb-3">
+                    <dt>Les moyens utilisés (médias d'accès) :</dt>
                 </article>
                 <article class="row mb-3">
                     <dt class="col-sm-3">Les 2 types de cables Ethernet :</dt>
                     <dd class="col-sm-9">
-                        <p>Droit : relie un ordinateur à un autre appareil, relais.</p>
-                        <p>Croisé : relie deux ordinateurs, permet de communiquer.</p>
+                        <p><strong>Droit :</strong> relie un ordinateur à un autre appareil, relais.</p>
+                        <p><strong>Croisé :</strong> relie deux ordinateurs, permet de communiquer.</p>
                     </dd>
                 </article>
                 <article class="row mb-3">
@@ -215,16 +215,121 @@
                     </dd>
                 </article>
                 <article class="row mb-3">
-                    <dt class="col-sm-3">Le Réseau en étoile : </dt>
+                    <dt class="col-sm-3">Le Réseau en étoile :</dt>
                     <dd class="col-sm-9">
                         <p>L'important, c'est que pour parler à une autre entité on passe par le matériel central (qui peut être le hub, le switch, etc...).</p>
                     </dd>
                 </article>
                 <article class="row mb-3">
-                    <dt class="col-sm-3">Le Réseau en anneau : </dt>
+                    <dt class="col-sm-3">Le Réseau en anneau :</dt>
                     <dd class="col-sm-9">
-                        <p>Topologie physique d'un réseau en anneau est... le bus. Particularité : token ring</p>
+                        <p>Topologie physique d'un réseau en anneau est... le bus. Particularité : token ring.</p>
                     </dd>
+                </article>
+                <article class="row mb-3">
+                    <dt class="col-sm-3">Topologie maillée :</dt>
+                    <dd class="col-sm-9">
+                        <p>Le principe de la topologie maillée est de relier tous les ordinateurs entre eux.</p>
+                    </dd>
+                </article>
+                <article class="row mb-3">
+                    <dt class="col-sm-3">Topologie hybride :</dt>
+                    <dd class="col-sm-9">
+                        <p>Juste le regroupement de plusieurs topologies différentes. Par exemple, Internet est une parfaite illustration 
+                            d'un réseau hybride car il joint des réseaux en anneau avec des réseaux en bus, avec des réseaux en étoile.</p>
+                    </dd>
+                </article>
+            </section>
+            <section>
+                <article class="mb-5 mt-5">
+                    <h2>Protocole</h2>
+                </article>
+                <article>
+                    <p>Un protocole est un ensemble de règles qui définissent comment se produit une communication dans un réseau.</p>
+                    <p>Le protocole est un genre de langage qui permet la communication entre differentes machines (protocole de communication).</p>
+                    <p>TCP est un protocole utilisé sur le réseau Internet pour transmettre des données entre deux machines. Protocole de transport, 
+                        TCP prend à sa charge l'ouverture et le contrôle de la liaison entre deux ordinateurs.</p>
+                    <p>IP est le protocole de base qui constitue Internet, car il est responsable de l’adressage des hôtes (ordinateurs) et du transport des paquets de données entre les hôtes, 
+                        via un inter-réseau à commutation par paquets.</p>
+                    <p>TCP/IP est un protocole qui réunit les deux protocoles TCP et IP. Il s'agit donc d'une suite de protocoles associée au domaine d'Internet pour lequel elle facilite le transfert de données.</p>
+                    <p>ICMP est un protocole dans la suite protocolaire TCP-IP utilisé pour envoyer des messages d'erreurs dans un réseau. Il travaille en partenariat avec le protocole IP.</p>
+                </article>
+                <article class="row mb-3">
+                    <dt class="col-sm-3">Les exigences d'un protocole :</dt>
+                    <dd class="col-sm-9">
+                        <p><strong>La gestion du format des données :</strong> gérer le format de ces données.</p>
+                        <p><strong>La gestion du format d'adresses :</strong> soit en mesure de spécifier l'adresse de l'émetteur et du destinataire.</p>
+                        <p><strong>Correspondance d'adresses :</strong> doit assurer des fonctions de correspondance entre les adresses logiques (IP) et les adresses physiques (MAC). 
+                            Cette correspondance s'appelle « address mapping » en anglais.</p>
+                        <p><strong>Routage :</strong> consiste à « diriger » les données entre deux réseaux d'un plan d'adressage différent.</p>
+                        <p><strong>Détection d'erreurs de transmission :</strong> être en mesure de détecter ces erreurs. Comme nous allons le voir, il s'agit d'un CRC (Cyclic Redundancy Check, Contrôle de Redondance Cyclique) 
+                            qui est ajouté à la fin des paquets.</p>
+                        <p><strong>Accusé de réception :</strong> permet à un hôte récepteur d'informer un hôte émetteur qu'il a reçu le paquet envoyé pour empêcher ce dernier de renvoyer les mêmes choses.</p>
+                        <p><strong>La gestion de perte d'informations :</strong> gère la reconnaissance des paquets. Si l'hôte-récepteur B répond dans un intervalle de x secondes à l'hôte-émetteur A, ce dernier saura alors que B 
+                            a bien reçu les données, et n'essaiera plus de les renvoyer. Si B par contre ne répond pas à A, ce dernier peut donc conclure que les données « se sont perdues » et va les renvoyer dans 
+                            un espace de temps déterminé par le protocole.</p>
+                        <p><strong>La direction du flux d'informations :</strong> doit dicter la direction de flux dans la communication simultanément pour un système de communication full-duplex et pour empêcher à deux hôtes de communiquer simultanément 
+                            dans un système half-duplex par exemple.</p>
+                        <p><strong>Contrôle de séquences :</strong> numérote » chaque « morceau » afin que le destinataire sache les « remettre en ordre » ou supprimer les doublons.</p>
+                        <p><strong>Gestion de flux :</strong> gére la volubilité du flux émetteur/récepteur.</p>
+                    </dd>
+                </article>
+                <article>
+                    <p>Une suite de protocoles est un ensemble de protocoles fonctionnant en harmonie et cohésion pour le bon déroulement de la communication. C'est une suite (une pile pour être précis) de protocoles en fait, "protocol stack" en anglais.</p>
+                </article>
+            </section>
+            <section>
+                <article class="mb-5 mt-5">
+                    <h2>OSI</h2>
+                </article>
+                <article>
+                    <p>Le modèle OSI (Open Systems Interconnection : « interconnexion de systèmes ouverts ») est une façon standardisée de segmenter en plusieurs blocs le processus de communication entre deux entités.</p>
+                    <p>Chaque bloc résultant de cette segmentation est appelé couche. Une couche est un ensemble de services accomplissant un but précis.</p>
+                    <p>Chaque couche du modèle OSI communique avec la couche au-dessus et au-dessous d'elle.</p>
+                    <p>La couche au-dessous pourvoit des services que la couche en cours utilise, et la couche en cours pourvoit des services dont la couche au-dessus d'elle aura besoin pour assurer son rôle.</p>
+                </article>
+                <article class="mb-3 mt-4">
+                    <dt>Le modèle OSI possède 7 couches :</dt>
+                </article>
+                <article class="row mb-3">
+                    <dt class="col-sm-3">Couches hôtes :</dt>
+                    <dd class="col-sm-9">
+                        <p><strong>Application :</strong> Point de contact avec les services réseaux.</p>
+                        <p><strong>Présentation :</strong> Elle s'occupe de tout aspect lié à la présentation des données : format, cryptage, encodage, etc.</p>
+                        <p><strong>Session :</strong> Responsable de l'initialisation de la session, de sa gestion et de sa fermeture.</p>
+                        <p><strong>Transport :</strong> Choix du protocole de transmission et préparation de l'envoi des données. Elle spécifie le numéro de port utilisé par l'application émettrice ainsi que le numéro de port de l'application réceptrice. 
+                            Elle fragmente les données en plusieurs séquences (ou segments).</p>
+                    </dd>
+                </article>
+                <article class="row mb-3">
+                    <dt class="col-sm-3">Couches médias :</dt>
+                    <dd class="col-sm-9">
+                        <p><strong>Réseau :</strong> Connexion logique entre les hôtes. Elle traite de tout ce qui concerne l'identification et le routage dans le réseau.</p>
+                        <p><strong>Liaison de données :</strong> Établissement d'une liaison physique entre les hôtes. Fragmente les données en plusieurs trames.</p>
+                        <p><strong>Physique :</strong> Conversion des trames en bits et transmission physique des données sur le média.</p>
+                    </dd>
+                </article>
+                <article>
+                    <p class="blockquote-footer"><strong>Moyen mnémotechnique :</strong> Pour Le Réseau, Tout Se Passe Automatiquement.</p>
+                </article>
+                <article class="row mb-3">
+                    <dt class="col-sm-3">Processus de transmission/réception :</dt>
+                    <dd class="col-sm-9">
+                        <p>Quand un hôte A envoie un message à un hôte B, le processus d'envoi va de la couche 7 (application) à la couche 1 (physique). En revanche, quand il s'agit de recevoir, le message emprunte le chemin inverse : il part de la couche 1 (physique) pour arriver à la couche 7 (application).</p>
+                    </dd>
+                </article>
+                <article class="row mb-3">
+                    <dt class="col-sm-3">PDU : Unité de données de protocole.</dt>
+                    <dd class="col-sm-9">
+                        <p><strong>APDU :</strong> Exemple dans la couche applicative, elles prennent le nom d'APDU (unité de données de protocole d’application).</p>
+                        <p><strong>PPDU :</strong> Unité de données de protocole de protocole.</p>
+                        <p><strong>SPDU :</strong> Unité de données de protocole de session.</p>
+                        <p><strong>TPDU :</strong> Unité de données de protocole de transport.</p>
+                    </dd>
+                </article>
+                <article>
+                    <p>Une fois dans la couche de transport, où elles sont segmentées, ces données deviennent logiquement des segments.</p>
+                    <p>Dans la couche réseau du modèle OSI, ces données prennent le nom de paquets ; dans les couches liaison et physique, respectivement ceux de frame (trame) et bit.   </p>
                 </article>
             </section>
         </main>
