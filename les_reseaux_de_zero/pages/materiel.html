@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Titre</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <main class="container">
+            <section>
+                <article class="mt-5 mb-5">
+                    <h2>Matériel</h2>
+                </article>
+                <article class="mb-3">
+                    <dt>Les moyens utilisés (médias d'accès) :</dt>
+                </article>
+                <article class="row mb-3">
+                    <dt class="col-sm-3">Les 2 types de cables Ethernet :</dt>
+                    <dd class="col-sm-9">
+                        <p><strong>Droit :</strong> relie un ordinateur à un autre appareil, relais.</p>
+                        <p><strong>Croisé :</strong> relie deux ordinateurs, permet de communiquer.</p>
+                    </dd>
+                </article>
+                <article class="row">
+                    <dt class="col-sm-3">Cable téléphonique :</dt>
+                    <dd class="col-sm-9">
+                        <p>C'est ce que l'on peut utiliser pour le téléphone et le modem.</p>
+                    </dd>
+                </article>
+            </section>
+            <section>
+                <article class="mt-5 mb-5">
+                    <h2>Le monde du sans-fil</h2>
+                </article>
+                <article class="row mb-3">
+                    <dt class="col-sm-3">Le Bluetooth :</dt>
+                    <dd class="col-sm-9">
+                        <p>Reseau appelé piconet (picoréseau).</p>
+                        <p>Quand plusieurs picoréseaux sont reliés, on parle alors de scatternet (réseau dispersé).</p>
+                        <p>Permet la communication en utilisant l'espace hertzien entre les équipements électroniques, afin de minimiser l'utilisation des câbles.</p>
+                        <p>Relation maître-esclave : le maître donne des ordres, l'esclave obéit.</p>
+                        <p>Un maître ne peut pas avoir plus de 7 esclaves.</p>
+                        <p>Un esclave ne peut communiquer qu'avec son ou ses maître(s).</p>
+                        <p>Un maître ne peut communiquer qu'avec son ou ses esclave(s) (bien qu'un maître puisse être lui-même esclave d'un autre).</p>
+                    </dd>
+                </article>
+                <article class="row mb-3">
+                    <dt class="col-sm-3">L'infrarouge :</dt>
+                    <dd class="col-sm-9">
+                        <p>Un moyen de transmission des données sans fil, qui exploite la lumière.</p>
+                    </dd>
+                </article>
+                <article class="row">
+                    <dt class="col-sm-3">Le Wi-Fi :</dt>
+                    <dd class="col-sm-9">
+                        <p>Moyen de transmission de données sans fil.</p>
+                    </dd>
+                </article>
+            </section>
+            <section>
+                <article class="mt-5 mb-5">
+                    <h2>La carte réseau</h2>
+                </article>
+                <article class="mb-5">
+                    <p>Transitent toutes les données à envoyer et à recevoir du réseau dans un ordinateur.</p>
+                </article>
+                <article class="row mb-3">
+                    <dt class="col-sm-3">Adresse MAC :</dt>
+                    <dd class="col-sm-9">
+                        <p>C'est l'adresse physique de la carte. Elle lui est attribuée à sa fabrication.</p>
+                    </dd>
+                </article>
+                <article class="row">
+                    <dt class="col-sm-3">Adresse IP :</dt>
+                    <dd class="col-sm-9">
+                        <p>L'adresse IP est relative au réseau : elle change tout bonnement suivant le réseau.</p>
+                    </dd>
+                </article>
+            </section>
+            <section>
+                <article class="mt-5 mb-5">
+                    <h2>Le Concentrateur (hub)</h2>
+                </article>
+                <article>
+                    <p>Un hub est un dispositif en réseau qui permet de mettre plusieurs ordinateurs en contact.</p>
+                    <p>Il reçoit des données par un port, et envoie ce qu'il reçoit aux autres.</p>
+                    <p>Manque de confidentialité.</p>
+                </article>
+            </section>
+            <section>
+                <article class="mt-5 mb-5">
+                    <h2>Le commutateur (switch)</h2>
+                </article>
+                <article>
+                    <p>Fonctionne à peu près comme un concentrateur (hub), sauf qu'il est plus discret et intelligent.</p>
+                    <p>Transmet des données aux autres ordinateurs en se basant sur leurs adresses MAC.</p>
+                </article>
+            </section>
+            <section>
+                <article class="mt-5 mb-5">
+                    <h2>Le routeur</h2>
+                </article>
+                <article>
+                    <p>Permet de mettre en contact 2 réseaux fondamentalement différents, réseau local et Internet.</p>
+                    <p>Possede plusieurs interfaces.</p>
+                </article>
+            </section>
+            <section class="mb-5">
+                <article class="mt-5 mb-5">
+                    <h2>Le Répéteur</h2>
+                </article>
+                <article>
+                    <p>Agit un peu comme un hub, mais ce dernier n'a que 2 interfaces.</p>
+                    <p>Renvoyer ce qu'il reçoit par l'interface de réception sur l'interface d'émission, mais plus fort.</p>
+                    <p>Peut dégrader la qualité du signal dans les réseaux sans fil.</p>
+                </article>
+            </section>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
