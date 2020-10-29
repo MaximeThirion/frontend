@@ -16,8 +16,8 @@ main {
     border-radius: 15px;
     margin: 5px auto 5px auto;
     background: #3F88C5;
-    transition: all .3s ease-out;
-    transition-delay: .3s;
+    transition: all .2s ease-out;
+    transition-delay: .2s;
 }
 .lecon:nth-child(even) {
     background: #A7CCED;
@@ -27,6 +27,7 @@ main {
     width: 27%;
     margin: 0px auto 0px auto;
     font-size: 1.5em;
+    filter: brightness(95%);
 }
 .interne {
     display: flex;
