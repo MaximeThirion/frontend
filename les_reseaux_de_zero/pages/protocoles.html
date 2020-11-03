@@ -2,9 +2,17 @@
 <html lang="fr">
     <head>
         <title>Titre</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
     </head>
     <body>
         <main class="container">
@@ -13,42 +21,139 @@
                     <h2>Protocole</h2>
                 </article>
                 <article>
-                    <p>Un protocole est un ensemble de règles qui définissent comment se produit une communication dans un réseau.</p>
-                    <p>Le protocole est un genre de langage qui permet la communication entre differentes machines (protocole de communication).</p>
-                    <p>TCP est un protocole utilisé sur le réseau Internet pour transmettre des données entre deux machines. Protocole de transport, 
-                        TCP prend à sa charge l'ouverture et le contrôle de la liaison entre deux ordinateurs.</p>
-                    <p>IP est le protocole de base qui constitue Internet, car il est responsable de l’adressage des hôtes (ordinateurs) et du transport des paquets de données entre les hôtes, 
-                        via un inter-réseau à commutation par paquets.</p>
-                    <p>TCP/IP est un protocole qui réunit les deux protocoles TCP et IP. Il s'agit donc d'une suite de protocoles associée au domaine d'Internet pour lequel elle facilite le transfert de données.</p>
-                    <p>ICMP est un protocole dans la suite protocolaire TCP-IP utilisé pour envoyer des messages d'erreurs dans un réseau. Il travaille en partenariat avec le protocole IP.</p>
+                    <p>
+                        Un protocole est un ensemble de règles qui définissent
+                        comment se produit une communication dans un réseau.
+                    </p>
+                    <p>
+                        Le protocole est un genre de langage qui permet la
+                        communication entre differentes machines (protocole de
+                        communication).
+                    </p>
+                    <p>
+                        TCP est un protocole utilisé sur le réseau Internet pour
+                        transmettre des données entre deux machines. Protocole
+                        de transport, TCP prend à sa charge l'ouverture et le
+                        contrôle de la liaison entre deux ordinateurs.
+                    </p>
+                    <p>
+                        IP est le protocole de base qui constitue Internet, car
+                        il est responsable de l’adressage des hôtes
+                        (ordinateurs) et du transport des paquets de données
+                        entre les hôtes, via un inter-réseau à commutation par
+                        paquets.
+                    </p>
+                    <p>
+                        TCP/IP est un protocole qui réunit les deux protocoles
+                        TCP et IP. Il s'agit donc d'une suite de protocoles
+                        associée au domaine d'Internet pour lequel elle facilite
+                        le transfert de données.
+                    </p>
+                    <p>
+                        ICMP est un protocole dans la suite protocolaire TCP-IP
+                        utilisé pour envoyer des messages d'erreurs dans un
+                        réseau. Il travaille en partenariat avec le protocole
+                        IP.
+                    </p>
                 </article>
                 <article class="row mb-3">
                     <dt class="col-sm-3">Les exigences d'un protocole :</dt>
                     <dd class="col-sm-9">
-                        <p><strong>La gestion du format des données :</strong> gérer le format de ces données.</p>
-                        <p><strong>La gestion du format d'adresses :</strong> soit en mesure de spécifier l'adresse de l'émetteur et du destinataire.</p>
-                        <p><strong>Correspondance d'adresses :</strong> doit assurer des fonctions de correspondance entre les adresses logiques (IP) et les adresses physiques (MAC). 
-                            Cette correspondance s'appelle « address mapping » en anglais.</p>
-                        <p><strong>Routage :</strong> consiste à « diriger » les données entre deux réseaux d'un plan d'adressage différent.</p>
-                        <p><strong>Détection d'erreurs de transmission :</strong> être en mesure de détecter ces erreurs. Comme nous allons le voir, il s'agit d'un CRC (Cyclic Redundancy Check, Contrôle de Redondance Cyclique) 
-                            qui est ajouté à la fin des paquets.</p>
-                        <p><strong>Accusé de réception :</strong> permet à un hôte récepteur d'informer un hôte émetteur qu'il a reçu le paquet envoyé pour empêcher ce dernier de renvoyer les mêmes choses.</p>
-                        <p><strong>La gestion de perte d'informations :</strong> gère la reconnaissance des paquets. Si l'hôte-récepteur B répond dans un intervalle de x secondes à l'hôte-émetteur A, ce dernier saura alors que B 
-                            a bien reçu les données, et n'essaiera plus de les renvoyer. Si B par contre ne répond pas à A, ce dernier peut donc conclure que les données « se sont perdues » et va les renvoyer dans 
-                            un espace de temps déterminé par le protocole.</p>
-                        <p><strong>La direction du flux d'informations :</strong> doit dicter la direction de flux dans la communication simultanément pour un système de communication full-duplex et pour empêcher à deux hôtes de communiquer simultanément 
-                            dans un système half-duplex par exemple.</p>
-                        <p><strong>Contrôle de séquences :</strong> numérote » chaque « morceau » afin que le destinataire sache les « remettre en ordre » ou supprimer les doublons.</p>
-                        <p><strong>Gestion de flux :</strong> gére la volubilité du flux émetteur/récepteur.</p>
+                        <p>
+                            <strong>La gestion du format des données :</strong>
+                            gérer le format de ces données.
+                        </p>
+                        <p>
+                            <strong>La gestion du format d'adresses :</strong>
+                            soit en mesure de spécifier l'adresse de l'émetteur
+                            et du destinataire.
+                        </p>
+                        <p>
+                            <strong>Correspondance d'adresses :</strong> doit
+                            assurer des fonctions de correspondance entre les
+                            adresses logiques (IP) et les adresses physiques
+                            (MAC). Cette correspondance s'appelle « address
+                            mapping » en anglais.
+                        </p>
+                        <p>
+                            <strong>Routage :</strong> consiste à « diriger »
+                            les données entre deux réseaux d'un plan d'adressage
+                            différent.
+                        </p>
+                        <p>
+                            <strong
+                                >Détection d'erreurs de transmission :</strong
+                            >
+                            être en mesure de détecter ces erreurs. Comme nous
+                            allons le voir, il s'agit d'un CRC (Cyclic
+                            Redundancy Check, Contrôle de Redondance Cyclique)
+                            qui est ajouté à la fin des paquets.
+                        </p>
+                        <p>
+                            <strong>Accusé de réception :</strong> permet à un
+                            hôte récepteur d'informer un hôte émetteur qu'il a
+                            reçu le paquet envoyé pour empêcher ce dernier de
+                            renvoyer les mêmes choses.
+                        </p>
+                        <p>
+                            <strong
+                                >La gestion de perte d'informations :</strong
+                            >
+                            gère la reconnaissance des paquets. Si
+                            l'hôte-récepteur B répond dans un intervalle de x
+                            secondes à l'hôte-émetteur A, ce dernier saura alors
+                            que B a bien reçu les données, et n'essaiera plus de
+                            les renvoyer. Si B par contre ne répond pas à A, ce
+                            dernier peut donc conclure que les données « se sont
+                            perdues » et va les renvoyer dans un espace de temps
+                            déterminé par le protocole.
+                        </p>
+                        <p>
+                            <strong
+                                >La direction du flux d'informations :</strong
+                            >
+                            doit dicter la direction de flux dans la
+                            communication simultanément pour un système de
+                            communication full-duplex et pour empêcher à deux
+                            hôtes de communiquer simultanément dans un système
+                            half-duplex par exemple.
+                        </p>
+                        <p>
+                            <strong>Contrôle de séquences :</strong> numérote »
+                            chaque « morceau » afin que le destinataire sache
+                            les « remettre en ordre » ou supprimer les doublons.
+                        </p>
+                        <p>
+                            <strong>Gestion de flux :</strong> gére la
+                            volubilité du flux émetteur/récepteur.
+                        </p>
                     </dd>
                 </article>
                 <article>
-                    <p>Une suite de protocoles est un ensemble de protocoles fonctionnant en harmonie et cohésion pour le bon déroulement de la communication. C'est une suite (une pile pour être précis) de protocoles en fait, "protocol stack" en anglais.</p>
+                    <p>
+                        Une suite de protocoles est un ensemble de protocoles
+                        fonctionnant en harmonie et cohésion pour le bon
+                        déroulement de la communication. C'est une suite (une
+                        pile pour être précis) de protocoles en fait, "protocol
+                        stack" en anglais.
+                    </p>
                 </article>
             </section>
         </main>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>

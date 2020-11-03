@@ -5,22 +5,22 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    font-family: 'Text Me One', sans-serif;
-    background: #393E41;
+    font-family: "Text Me One", sans-serif;
+    background: #393e41;
     padding: 5px 0 5px 0;
 }
 .lecon {
     width: 24%;
     height: 200px;
-    border: 1px solid #393E41;
+    border: 1px solid #393e41;
     border-radius: 15px;
     margin: 5px auto 5px auto;
-    background: #3F88C5;
-    transition: all .2s ease-out;
-    transition-delay: .2s;
+    background: #3f88c5;
+    transition: all 0.2s ease-out;
+    transition-delay: 0.2s;
 }
 .lecon:nth-child(even) {
-    background: #A7CCED;
+    background: #a7cced;
 }
 .lecon:hover {
     height: 210px;
@@ -35,11 +35,10 @@ main {
     height: 200px;
     justify-content: center;
     align-items: center;
-    
 }
 a {
     text-decoration: none;
-    color: #393E41;
+    color: #393e41;
 }
 a h1 {
     text-align: center;
